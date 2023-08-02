@@ -261,6 +261,12 @@ Copy a subset of buckets by using a wildcard symbol (*) in the bucket name from 
 
 `--exclude-path`    (string)    Exclude these paths when copying. This option doesn't support wildcard characters (*). Checks relative path prefix(For example: myFolder;myFolder/subDirName/file.pdf). When used in combination with account traversal, paths don't include the container name.
 
+  **&#9999;** **NOTE on '--exclude-path with multiple items**
+
+  When specifying multiple items with --exclude-path, the list must be enclosed in double-quotes and semi-colon separated.
+
+  Example: --exclude-path "archive;oldbuilds"
+
 `--exclude-pattern`    (string)    Exclude these files when copying. This option supports wildcard characters (*)
 
 `--exclude-regex`    (string)    Exclude all the relative path of the files that align with regular expressions. Separate regular expressions with ';'.
